@@ -1,36 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href={{url_for("static", filename="css/main.css")}}>
-    <title>Welcome</title>
-    
-</head>
-<body>
-    <header>
-        <h1>Misinko Pythonista</h1>
-    </header>
+{% extends "_main.jinja" %}
 
-    <nav>
-        <ul class="nav">
-            <li><a href="#">About</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+{% block title %} Welcome to Markdown blog {% endblock %}
 
-    <main>
-        <blockquote>
-            Cookie gummies cake. Pastry icing oat cake topping liquorice marzipan carrot cake. Carrot cake croissant oat cake jelly beans carrot cake apple pie. Soufflé toffee caramels cake candy canes. Cookie tootsie roll pastry jujubes halvah dessert tart cheesecake. Gummi bears cheesecake macaroon tootsie roll croissant lemon drops croissant apple pie sweet.
-        </blockquote>
-    </main>
-
-    <footer>
-        &#169; 2020 Misko Stracina
-    </footer>
-
-
-    
-</body>
-</html>
+{% block main %}
+Cookie gummies cake. Pastry icing oat cake topping liquorice marzipan carrot cake. Carrot cake croissant oat cake jelly beans carrot cake apple pie. Soufflé toffee caramels cake candy canes. Cookie tootsie roll pastry jujubes halvah dessert tart cheesecake. Gummi bears cheesecake macaroon tootsie roll croissant lemon drops croissant apple pie sweet.Serus
+{% endblock %}

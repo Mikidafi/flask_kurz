@@ -11,5 +11,13 @@ def view_welcome_page():
 def view_about():
     return render_template("about.jinja")
 
+@app.route("/articles/")
+def view_articles():
+    return render_template("articles.jinja")
+
+@app.route("/admin/")
+def view_admin():
+    return render_template("admin.jinja")
+
 
     

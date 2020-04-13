@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={{url_for("static", filename="css/main.css")}}>
+    <title>{% block title %} {% endblock %}</title>
+
+</head>
+<body>
+    <header>
+        <h1><a href="{{ url_for("view_welcome_page") }}">Misinko Pythonista</a></h1>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="{{ url_for("view_about") }}">About</a></li>
+            <li><a href="{{ url_for("view_articles") }}">Articles</a></li>
+            <li><a href="{{ url_for("view_admin") }}">Admin</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block main %} {% endblock %}
+    </main>
+
+    <footer>
+        &#169; 2020 Misko Stracina
+    </footer>
+
+
+
+</body>
+</html>
