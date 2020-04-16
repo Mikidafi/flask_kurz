@@ -15,3 +15,9 @@ ul a:hover,
 ul a:focus {
     color: dodgerblue;
 }
+.btn {
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #bada555;
+	color: #FFFF;
+}

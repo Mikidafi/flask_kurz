@@ -1,0 +1,15 @@
+{% extends "_main.jinja" %}
+
+{% block title %}
+    Article not found
+{% endblock title %}
+
+{% block main %}
+    <h1>OOOPS...</h1>
+    <h2>Article not found.</h2>
+    <p>Unfortunatelly article with id {{ art_id }} was not found</p>
+    <ul>
+    	<li><a class = "btn" href="{{ url_for("view_articles") }}">Back to articles</a></li>
+    	<li class = "btn"><a href="{{ url_for("view_welcome_page") }}">Back to the home page</a></li>
+    </ul>
+{% endblock %}

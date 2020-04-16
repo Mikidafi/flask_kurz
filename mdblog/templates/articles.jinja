@@ -2,4 +2,17 @@
 
 {% block title %} Welcome to articles {% endblock %}
 
-{% block main %} Tu budu nejake artikle.  {% endblock %}
+{% block main %}
+	{% if articles %}
+		<ul>
+			{% for id, article in articles %}
+				<li>
+					<h2>{{ article.title }}</h2>
+					<p>{{ article.content | truncate(100) }}</p>
+				</li>
+			{% endfor %}
+		</ul>
+	{% else %}
+		<p>No articles to display mf.</p>
+	{% endif %}
+{% endblock %}
